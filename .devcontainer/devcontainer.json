@@ -3,16 +3,19 @@
 {
 	"name": "Python 3.13",
 	"image": "mcr.microsoft.com/devcontainers/python:3.13-bullseye",
+    "features": {
+        "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {}
+    },
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
 				"python.linting.enabled": true
 			},
-			
+
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
